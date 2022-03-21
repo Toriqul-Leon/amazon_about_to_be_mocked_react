@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/amazon_about_to_be_mocked_react/static/css/main.ac007a14.css",
-    "main.js": "/amazon_about_to_be_mocked_react/static/js/main.f55eefda.js",
+    "main.css": "/amazon_about_to_be_mocked_react/static/css/main.c40c645e.css",
+    "main.js": "/amazon_about_to_be_mocked_react/static/js/main.aede3d94.js",
     "static/js/787.bc948b2a.chunk.js": "/amazon_about_to_be_mocked_react/static/js/787.bc948b2a.chunk.js",
     "static/media/Logo.svg": "/amazon_about_to_be_mocked_react/static/media/Logo.311dd846bc480af4fcd81826b6b793a8.svg",
     "index.html": "/amazon_about_to_be_mocked_react/index.html",
-    "main.ac007a14.css.map": "/amazon_about_to_be_mocked_react/static/css/main.ac007a14.css.map",
-    "main.f55eefda.js.map": "/amazon_about_to_be_mocked_react/static/js/main.f55eefda.js.map",
+    "main.c40c645e.css.map": "/amazon_about_to_be_mocked_react/static/css/main.c40c645e.css.map",
+    "main.aede3d94.js.map": "/amazon_about_to_be_mocked_react/static/js/main.aede3d94.js.map",
     "787.bc948b2a.chunk.js.map": "/amazon_about_to_be_mocked_react/static/js/787.bc948b2a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ac007a14.css",
-    "static/js/main.f55eefda.js"
+    "static/css/main.c40c645e.css",
+    "static/js/main.aede3d94.js"
   ]
 }
