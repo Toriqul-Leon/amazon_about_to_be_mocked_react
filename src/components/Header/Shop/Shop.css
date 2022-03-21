@@ -1,0 +1,24 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+}
+
+.cart-container {
+  text-align: center;
+  background-color: #ffe1b3;
+  /* height: 91.5vh; */
+}
+
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 45px;
+  font-family: "lato";
+  font-weight: 400;
+  margin: 20px;
+}
