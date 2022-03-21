@@ -1,0 +1,24 @@
+.header {
+  background-color: #1c2b35;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header img {
+  padding-left: 140px;
+}
+.sub-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 140px;
+}
+.sub-header a {
+  cursor: pointer;
+  margin: 15px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 17px;
+}
