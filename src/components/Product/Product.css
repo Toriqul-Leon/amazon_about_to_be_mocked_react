@@ -29,4 +29,5 @@
 
 .main-btn:hover {
   background-color: orange;
+  cursor: pointer;
 }
