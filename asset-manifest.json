@@ -1,16 +1,16 @@
 {
-  "files": {
-    "main.css": "/amazon_about_to_be_mocked_react/static/css/main.c40c645e.css",
-    "main.js": "/amazon_about_to_be_mocked_react/static/js/main.aede3d94.js",
-    "static/js/787.bc948b2a.chunk.js": "/amazon_about_to_be_mocked_react/static/js/787.bc948b2a.chunk.js",
-    "static/media/Logo.svg": "/amazon_about_to_be_mocked_react/static/media/Logo.311dd846bc480af4fcd81826b6b793a8.svg",
-    "index.html": "/amazon_about_to_be_mocked_react/index.html",
-    "main.c40c645e.css.map": "/amazon_about_to_be_mocked_react/static/css/main.c40c645e.css.map",
-    "main.aede3d94.js.map": "/amazon_about_to_be_mocked_react/static/js/main.aede3d94.js.map",
-    "787.bc948b2a.chunk.js.map": "/amazon_about_to_be_mocked_react/static/js/787.bc948b2a.chunk.js.map"
-  },
-  "entrypoints": [
-    "static/css/main.c40c645e.css",
-    "static/js/main.aede3d94.js"
-  ]
+  "main.css": "/amazon_about_to_be_mocked_react/static/css/main.055d3c65.chunk.css",
+  "main.js": "/amazon_about_to_be_mocked_react/static/js/main.164fd9c4.chunk.js",
+  "main.js.map": "/amazon_about_to_be_mocked_react/static/js/main.164fd9c4.chunk.js.map",
+  "static/js/1.05a8e767.chunk.js": "/amazon_about_to_be_mocked_react/static/js/1.05a8e767.chunk.js",
+  "static/js/1.05a8e767.chunk.js.map": "/amazon_about_to_be_mocked_react/static/js/1.05a8e767.chunk.js.map",
+  "static/js/2.df8825f2.chunk.js": "/amazon_about_to_be_mocked_react/static/js/2.df8825f2.chunk.js",
+  "static/js/2.df8825f2.chunk.js.map": "/amazon_about_to_be_mocked_react/static/js/2.df8825f2.chunk.js.map",
+  "runtime~main.js": "/amazon_about_to_be_mocked_react/static/js/runtime~main.df3dbd7f.js",
+  "runtime~main.js.map": "/amazon_about_to_be_mocked_react/static/js/runtime~main.df3dbd7f.js.map",
+  "static/media/Logo.svg": "/amazon_about_to_be_mocked_react/static/media/Logo.af182446.svg",
+  "static/css/main.055d3c65.chunk.css.map": "/amazon_about_to_be_mocked_react/static/css/main.055d3c65.chunk.css.map",
+  "index.html": "/amazon_about_to_be_mocked_react/index.html",
+  "precache-manifest.1e7245676fbbc21fc1fe98c2c68a301d.js": "/amazon_about_to_be_mocked_react/precache-manifest.1e7245676fbbc21fc1fe98c2c68a301d.js",
+  "service-worker.js": "/amazon_about_to_be_mocked_react/service-worker.js"
 }
