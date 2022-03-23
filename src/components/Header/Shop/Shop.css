@@ -10,8 +10,7 @@
 
 .cart-container {
   text-align: center;
-  background-color: #ffe1b3;
-  /* height: 91.5vh; */
+  background-color: rgba(255, 153, 0, 0.3);
 }
 
 .products-container {
