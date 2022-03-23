@@ -5,8 +5,10 @@ import { faArrowRight, faTrashCan } from "@fortawesome/free-solid-svg-icons";
 const Cart = ({ cart }) => {
   let total = 0;
   let shipping = 0;
+  let quantity = 0;
   for (const product of cart) {
-    total = total + product.price;
+    quantity = quantity + product.quantity;
+    total = total + product.price * product.quantity;
     shipping = shipping + product.shipping;
   }
   const tax = total * 0.1;
@@ -14,7 +16,7 @@ const Cart = ({ cart }) => {
   return (
     <div className="cart">
       <h4>Order Summary</h4>
-      <h5>Selected Items: {cart.length}</h5>
+      <h5>Selected Items: {quantity}</h5>
       <h5>Total Price: $ {total}</h5>
       <h5>Total Shipping Charge: $ {shipping}</h5>
       <h5>Tax: $ {tax.toFixed(2)} </h5>
