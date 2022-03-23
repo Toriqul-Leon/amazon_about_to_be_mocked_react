@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/amazon_about_to_be_mocked_react/precache-manifest.7c45ca0a1c2d0628e1fd75e5799c3cd8.js"
+  "/amazon_about_to_be_mocked_react/precache-manifest.3f7e1ade023f674da73324edcdfa216e.js"
 );
 
 workbox.clientsClaim();
