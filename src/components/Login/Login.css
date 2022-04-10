@@ -43,6 +43,10 @@
   border: none;
   border-radius: 5px;
 }
+.form-submit:hover {
+  cursor: pointer;
+  background-color: rgb(254, 224, 178, 0.5);
+}
 
 .form-link {
   text-decoration: none;
@@ -51,4 +55,42 @@
 .form-link:hover {
   text-decoration: none;
   color: #b09f85;
+}
+
+.line-view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #bdc3c8;
+}
+.line-view span {
+  padding: 20px 5px;
+  margin: 20px 10px;
+}
+.line {
+  border-top: 1px solid #bdc3c8;
+  width: 100%;
+}
+
+div img {
+  width: 40px;
+  height: 40px;
+}
+
+.google-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 0 20px;
+  font-size: 20px;
+  border: 1px solid #95a0a7;
+  border-radius: 5px;
+}
+.google-logo span {
+  padding: 10px;
+}
+
+.google-logo:hover {
+  cursor: pointer;
 }
