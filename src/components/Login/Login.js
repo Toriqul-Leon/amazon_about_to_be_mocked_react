@@ -1,8 +1,36 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import "./Login.css";
-
+import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
+import auth from "../../firebase.init";
 const Login = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [
+    signInWithEmailAndPassword,
+    user,
+    loading,
+    error,
+  ] = useSignInWithEmailAndPassword(auth);
+  const handleEmailBlur = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handlePasswordBlur = (e) => {
+    setPassword(e.target.value);
+  };
+
+  const handleUserSignIn = (e) => {
+    e.preventDefault();
+    signInWithEmailAndPassword(email, password);
+  };
+  const navigate = useNavigate();
+
+  if (user) {
+    console.log(user);
+    navigate("/shop");
+  }
+
   return (
     <>
       <div className="container">
@@ -10,14 +38,30 @@ const Login = () => {
           <div>
             {" "}
             <h1 className="form-title">Login</h1>
-            <form action="">
+            <form onSubmit={handleUserSignIn} action="">
               <div className="input-group">
                 <label htmlFor="email">Email</label>
-                <input required type="email" name="email" id="" />
+                <input
+                  onBlur={handleEmailBlur}
+                  required
+                  type="email"
+                  name="email"
+                  id=""
+                />
               </div>
+
               <div className="input-group">
                 <label htmlFor="password">Password</label>
-                <input required type="password" name="password" id="" />
+                <input
+                  onBlur={handlePasswordBlur}
+                  required
+                  type="password"
+                  name="password"
+                  id=""
+                />
+              </div>
+              <div>
+                <p>{loading}</p>
               </div>
               <input
                 required

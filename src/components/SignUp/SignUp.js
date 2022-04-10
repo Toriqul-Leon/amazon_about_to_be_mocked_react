@@ -1,8 +1,48 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import "./SignUp.css";
+import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
+import auth from "../../firebase.init";
 
 const SignUp = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+  const [error, setError] = useState("");
+  const [
+    createUserWithEmailAndPassword,
+    user,
+  ] = useCreateUserWithEmailAndPassword(auth);
+
+  const navigate = useNavigate();
+  const handleEmailBlur = (e) => {
+    setEmail(e.target.value);
+    console.log(e.target.value);
+  };
+  const handlePasswordBlur = (e) => {
+    setPassword(e.target.value);
+    console.log(e.target.value);
+  };
+  const handleConfirmPasswordBlur = (e) => {
+    setConfirmPassword(e.target.value);
+    console.log(e.target.value);
+  };
+
+  if (user) {
+    navigate("/shop");
+  }
+
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    if (password !== confirmPassword) {
+      setError("Password didn't Match");
+      return;
+    } else {
+      setError("");
+    }
+    createUserWithEmailAndPassword(email, password);
+  };
+
   return (
     <>
       <div className="container">
@@ -10,19 +50,38 @@ const SignUp = () => {
           <div>
             {" "}
             <h1 className="form-title">Sign Up</h1>
-            <form action="">
+            <form onSubmit={handleFormSubmit} action="">
               <div className="input-group">
                 <label htmlFor="email">Email</label>
-                <input required type="email" name="email" id="" />
+                <input
+                  onBlur={handleEmailBlur}
+                  required
+                  type="email"
+                  name="email"
+                  id=""
+                />
               </div>
               <div className="input-group">
                 <label htmlFor="password">Password</label>
-                <input required type="password" name="password" id="" />
+                <input
+                  onBlur={handlePasswordBlur}
+                  required
+                  type="password"
+                  name="password"
+                  id=""
+                />
               </div>
               <div className="input-group">
                 <label htmlFor="confirm-password">Confirm Password</label>
-                <input required type="password" name="confirm-password" id="" />
+                <input
+                  onBlur={handleConfirmPasswordBlur}
+                  required
+                  type="password"
+                  name="confirm-password"
+                  id=""
+                />
               </div>
+              <p style={{ color: "red" }}>{error}</p>
               <input className="form-submit" type="submit" value="Sign Up" />
             </form>
             <p>

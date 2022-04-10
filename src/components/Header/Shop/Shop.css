@@ -4,11 +4,14 @@
   box-sizing: border-box;
 }
 .container {
+  position: relative;
   display: grid;
   grid-template-columns: 4fr 1fr;
 }
 
 .cart-container {
+  position: sticky;
+  top: 0;
   text-align: center;
   background-color: rgba(255, 153, 0, 0.3);
 }
