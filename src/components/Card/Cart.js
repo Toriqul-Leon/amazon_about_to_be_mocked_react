@@ -5,7 +5,7 @@ import { faArrowRight, faTrashCan } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 const Cart = (props) => {
   const { cart } = props;
-  console.log(props);
+
   let total = 0;
   let shipping = 0;
   let quantity = 0;
@@ -24,7 +24,7 @@ const Cart = (props) => {
       <h5>Total Shipping Charge: $ {shipping}</h5>
       <h5>Tax: $ {tax.toFixed(2)} </h5>
       <h5>Grand Total: $ {grandTotal.toFixed(2)} </h5>
-
+      {props.children}
       <div className="btn-container">
         <button className="cart-btn">
           Clear Cart
@@ -32,7 +32,6 @@ const Cart = (props) => {
         </button>
 
         <button to="/orders" className="cart-btn">
-          {props.children}
           <FontAwesomeIcon className="fa-icon" icon={faArrowRight} />
         </button>
       </div>

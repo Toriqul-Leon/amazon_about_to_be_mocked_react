@@ -60,7 +60,7 @@ const Shop = () => {
       <div className="cart-container">
         <Cart cart={cart}>
           <Link to="/orders">
-            <h2>Review Order</h2>
+            <h1>Review Order</h1>
           </Link>
         </Cart>
       </div>

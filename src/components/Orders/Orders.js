@@ -11,7 +11,7 @@ const Orders = () => {
   const handleDeleteButton = (product) => {
     let rest = cart.filter((pd) => pd.id !== product.id);
     setCart(rest);
-    removeFromDb(product.id);
+    removeFromDb(product.id)
   };
   return (
     <div className="container">
